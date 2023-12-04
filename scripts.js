@@ -31,7 +31,7 @@ var duration = 0;
 
 function recalculate() {
     var costLabel = document.getElementById("calculated-cost");
-    var costPerDay = modelName === "XYZ" ? 100 : 213; // Cost of each model per day
+    var costPerDay = modelName === "XYZ" ? 100 * 213; // Cost of each model per day
     var totalCost = duration * costPerDay; // Calculation of Total cost
     costLabel.innerHTML = totalCost.toFixed(2); // Cost label with the calculated cost
  }
@@ -94,7 +94,7 @@ function changeDuration() {
        durationText.innerHTML = duration; // Add the new duration to the display
        recalculate(); // Recalculate the total cost with the new duration
    } else {
-       alert("Please enter a valid number for the duration."); // Tell the user, the number they have inputted is invalid
+       alert("Please enter a valid number for the duration."); // it tells  the user, the number they have inputted is invalid
    }
 }
 durationButton.addEventListener("click", changeDuration);

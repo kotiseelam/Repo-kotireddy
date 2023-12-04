@@ -31,9 +31,9 @@ var duration = 0;
 
 function recalculate() {
     var costLabel = document.getElementById("calculated-cost");
-    var costPerDay = modelName === "XYZ" ? 100 * 213; // Cost of each model per day
-    var totalCost = duration * costPerDay; // Calculation of Total cost
-    costLabel.innerHTML = totalCost.toFixed(2); // Cost label with the calculated cost
+    var costPerDay = modelName === "XYZ" ? 100 * 213; // Cost of model per day
+    var totalCost = duration * costPerDay; //  Total cost is calculated
+    costLabel.innerHTML = totalCost.toFixed(2); // Cost label with the cost
  }
  
 
